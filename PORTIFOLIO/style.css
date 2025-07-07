@@ -1,87 +1,56 @@
-/* Estilização geral */ 
+/* Define a fonte padrão, remove margens e preenchimentos da página */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f9fa;
-  color: #333;
+  background: #f5f5f5; /* Cor de fundo clara */
+  color: #333; /* Cor padrão do texto */
 }
 
+/* Estiliza o cabeçalho do site */
 header {
-  background-color: #333;
-  padding: 10px 0;
+  background-color: #0073e6; /* Azul forte */
+  color: white;
+  padding: 20px;
+  text-align: center; /* Centraliza o texto */
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+/* Estiliza o menu de navegação */
+nav {
+  background-color: #005bb5; /* Azul escuro */
+  padding: 10px;
   text-align: center;
 }
 
-nav ul li {
-  display: inline;
-  margin: 0 15px;
-}
-
-nav ul li a {
+/* Estiliza os links do menu */
+nav a {
   color: white;
-  text-decoration: none;
+  text-decoration: none; /* Remove sublinhado */
+  margin: 0 15px; /* Espaçamento entre os links */
   font-weight: bold;
 }
 
-nav ul li a:hover {
+/* Efeito ao passar o mouse nos links */
+nav a:hover {
   text-decoration: underline;
 }
 
+/* Estiliza o conteúdo principal */
 main {
+  padding: 30px;
   max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
+  margin: auto;
   background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra leve */
 }
 
+/* Estiliza o rodapé da página */
 footer {
+  background-color: #0073e6;
+  color: white;
   text-align: center;
-  padding: 15px;
-  background-color: #333;
-  color: white;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-button {
-  margin-top: 15px;
   padding: 10px;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
+  position: fixed;
+  width: 100%;
+  bottom: 0; /* Fixa no final da página */
 }
